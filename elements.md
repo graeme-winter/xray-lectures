@@ -46,4 +46,4 @@ This wil be discussed in more detal [later](./detection.md) but in general the i
 
 ## Summary
 
-The basic theory which defines the X-ray diffraction experiment has been well understood for over a century. In practice not all of this needs to be understood in detail to perform a diffration experiment or to use data processing software, but the basics are useful in terms of understanding how to use the instrumentation for performing an experiment. The details of performing the experiment are usually summarised as a [data collection strategy](./strategy.md), which will be discussed in the next section.
+The basic theory which defines the X-ray diffraction experiment has been well understood for over a century. In practice not all of this needs to be understood in detail to perform a diffraction experiment or to use data processing software, but the basics are useful in terms of understanding how to use the instrumentation for performing an experiment. The details of performing the experiment are usually summarised as a [data collection strategy](./strategy.md), which will be discussed in the next section.
