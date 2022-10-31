@@ -31,3 +31,13 @@ Photon counting pixel array detectors (Pilatus, Eiger) enabled shutterless conti
 Inside the pixel electronics the charge is compared with a threshold value: if it exceeds this value then a count is recorded, and if not it is ignored. This has a benefit of eliminating dark current, but requires care when the charge from one photon is read out across multiple pixels. The typical compromise is to set the threshold value to half of the photon energy, ensuring that no more than one count can be recorded for each photon. While the capability to record continuously and capture pretty much every photon has enabled a step change in the throughput of beamlines, some care still needs to be taken in collecting data. An individual pixel requires a small amount of time to record a photon (typically ~ O(ns)) - if a second photon arrives at the same time it is possible only one will be recorded. This gives rise to a count _rate_ limit which is surprisingly easy to reach with a good crystal on a bright beamline. In addition the sensor has finite thickness, and so there is a calculable probability of a photon passing straight through without being recorded. This probably increases with photon energy, reducing the effective quantum efficiency of the detector. More recently detectors with cadmium telluride sensors have become available which are more sensitive at high energy thanks to their much higher atomic number than silicon, but at the cost of reduced sensitivity at low photon energies.
 
 For photon counting detectors it is generally the case that recording twice as many observations with half the flux will give comparable results, in the absence of detector saturation and radiation damage. As these detectors are commonplace, it is therefore worth starting gently with data collection.
+
+## Summary
+
+The question of how best to collect data depends substantially on the detector being used: in most cases however photon counting pixel array detectors are used, simplifying the process of collecting data. The main considerations are to ensure that
+
+- complete data are recorded
+- radiation damage is not excessive
+- the detector count rate is not exceeded
+
+Since weak data can be reliably recorded a pragmatic strategy is to a record very weak set, followed by one with four times the flux (which should double the signal to noise), repeating until the requirements are met or the sample is damaged. Further discussion of this continues in [signal to noise](./signal-noise.md).

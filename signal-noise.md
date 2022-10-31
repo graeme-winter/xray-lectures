@@ -1,0 +1,13 @@
+# Signal and Noise
+
+In almost every branch of observational science the balance between signal and noise is critical, and X-ray diffraction is no different. The definition of noise however requires care here: the noise can be conventional random noise e.g. from background or systematic effects from the experiment such as sample absorption or radiation damage. The essence of a processed X-ray diffraction data set is a list of discrete intensity values which may each be measured multiple times. The fundamental assumption is that measurements of a given unique reflection are drawn from a single distribution, such that averaging repeated measurements will converge on an underlying "true" value. Repeated measurements may be used to correct for some systematic effects such as sample absorption, but ideally every effort should be made to reduce any "evolution" of the sample as may result from radiation damage.
+
+In the general sense the true underlying distribution of intensity measurements is Poissonian, in that the data are effectively a number of counts in a given interval: it is important to note that this is a _lower_ bound on the uncertainty and that the true "error" in any value will be greater than this. As an approximate rule, in the absence of radiation damage, the merged I/σ for a given reflection will scale as √n where n is the number of unique observations. This is however only true for sources of random error: any contribution which is correlated with some systematic effect will not be reduced by repeated measurement.
+
+## Random Noise
+
+One obvious source of random error in the data is the background - if this is low the contribution to the uncertainty will be small. Atoms in the beam which are not your crystal are a major source of background: a well mounted sample with little liquor around it will give a lower background than the same crystal in a large drop. The significance of this will depend on the overall strength of diffraction. A small / poorly diffracting sample could be rendered almost invisible if poorly mounted. Equally, a large drop will be harder to cryo cool without ice formation or cracking, which could also impact the data quality.
+
+## Systematic Effects
+
+In most cases the changes in illuminated volume and radiation damage will be the most conspicuous sources of systematic variation in the data. For long wavelengths sample absorption can also be a significant factor. In most cases however these can be corrected for given only the data... 
