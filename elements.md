@@ -26,4 +26,16 @@ The practical result of this symmetry is that there are multiple copies of the s
 
 ## Geometry
 
-Words.
+Understanding the geometry of an X-ray diffraction experiment is critical to successful interpretation of the data. Starting from [Bragg's Law](https://en.wikipedia.org/wiki/Bragg%27s_law) it is possible to derive almost everything required to successfullt interpret a diffraction pattern, however this is a substantial body of work and out of context here. The most important aspects are:
+
+- knowing the X-ray wavelength
+- knowing the position of the detector (typically encoded as a distance and beam centre)
+- knowing the orientation and rotation direction of the goniometer
+
+This is illustrated as:
+
+![Geometry of an X-ray diffraction experiment](./geometry.jpg)
+
+Which shows the orientation of the detector, the origin, the fast and slow directions, the orientation of the unit cell and the goniometer direction - this image was generated with `dials.geometry_viewer` which can be useful in ensuring that the experimental metadata make sense.
+
+The position of the detector should be given some thought: for a given wavelength moving the detector closer to the sample allows a higher resolution to be accessed at the cost of reducing the space between spots. Moving the detector back increases the space between spots, but limits the resolution which can be reached. The ideal detector position will balance these two constraints by ensuring that the spots are well separated but that the full resolution range is recorded - generally it is worth keeping the detector slightly closer than you think you need to ensure that you are not missing useful data. As mentioned above, the positions of reflections is determined by the orientation and size of the unit cell - in practice this has the most obvious impact that crystals with a small unit cell have more widely separated spots: for crystals with a large unit cell e.g. virus crystals or complexes the spacing of the spots can be a limiting factor.
